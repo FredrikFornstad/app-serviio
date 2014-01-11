@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Create empty password file
+#--------------------------------
+if [ ! -f /etc/serviio/webconfig.user ]; then
+	mkdir /etc/serviio
+	/bin/touch /etc/serviio/webconfig.users
+	/bin/chown webconfig /etc/serviio/webconfig.users
+fi
+
+
+# Patch ownership for webconfig access
+#-------------------------------
+/bin/chown -R serviio.webconfig /usr/share/serviio*
+/bin/chmod u+s /usr/share/serviio-WebUI/*.php
+/bin/chown webconfig /etc/serviio/webconfig.users
+
+
