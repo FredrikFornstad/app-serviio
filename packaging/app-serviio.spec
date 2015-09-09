@@ -1,7 +1,7 @@
 
 Name: app-serviio
 Epoch: 1
-Version: 1.4
+Version: 1.5
 Release: 1%{dist}
 Summary: **serviio_app_name**
 License: Free to use with limitations. Please see LICENCE.txt in source file or http://www.serviio.org/licence
@@ -21,8 +21,8 @@ Summary: **serviio_app_name** - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
-Requires: serviio >= 1.4
-Requires: serviio-WebUI >= 1.5.3
+Requires: serviio >= 1.5
+Requires: serviio-WebUI >= 1.6.3
 Requires: webconfig-php-mbstring >= 5.3.3
 Requires: app-base-core >= 1:1.2.6
 

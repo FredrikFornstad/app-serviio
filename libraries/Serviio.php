@@ -7,7 +7,7 @@
  * @package    serviio
  * @subpackage libraries
  * @author     Fredrik Fornstad <fredrik.fornstad@gmail.com>
- * @copyright  2013
+ * @copyright  2015
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later
  */
 
@@ -83,7 +83,7 @@ clearos_load_library('base/Validation_Exception');
  * @package    serviio
  * @subpackage libraries
  * @author     Fredrik Fornstad <fredrik.fornstad@gmail.com>
- * @copyright  2013
+ * @copyright  2015
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later
  */
 

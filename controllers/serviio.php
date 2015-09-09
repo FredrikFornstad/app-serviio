@@ -7,7 +7,7 @@
  * @package    serviio
  * @subpackage controllers
  * @author     Fredrik Fornstad <fredrik.fornstad@gmail.com>
- * @copyright  2013
+ * @copyright  2015
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
  */
 
@@ -39,7 +39,7 @@
  * @package    serviio
  * @subpackage controllers
  * @author     Fredrik Fornstad <fredrik.fornstad@gmail.com>
- * @copyright  2013
+ * @copyright  2015
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
  */
 
