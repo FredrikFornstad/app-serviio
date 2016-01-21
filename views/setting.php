@@ -28,6 +28,8 @@
 //  
 ///////////////////////////////////////////////////////////////////////////////
 
+$serveraddr = getenv("SERVER_NAME");
+
 ///////////////////////////////////////////////////////////////////////////////
 // Load dependencies
 ///////////////////////////////////////////////////////////////////////////////
@@ -55,21 +57,8 @@ echo infobox_highlight(
     lang('serviio_management_tool'),
     lang('serviio_management_tool_help') . '<br><br>' .
     "<p align='center'>" .  
-    anchor_custom('/serviio', lang('serviio_go_to_management_tool'), 'high', array('target' => '_blank')) . 
+    anchor_custom('http://'.$serveraddr.':23423/console', lang('serviio_go_to_management_tool'), 'high', array('target' => '_blank')) . 
     "</p>"
 );
-
-echo form_open('serviio');
-echo form_header(lang('base_password'));
-
-echo field_password('password', '', lang('base_password'));
-echo field_password('verify', '', lang('base_verify'));
-
-echo field_button_set(
-    array(form_submit_update('submit', 'high'))
-);
-
-echo form_footer();
-echo form_close();
 
 echo "</div>";

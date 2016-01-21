@@ -1,7 +1,7 @@
 
 Name: app-serviio
 Epoch: 1
-Version: 1.5
+Version: 1.6
 Release: 1%{dist}
 Summary: **serviio_app_name**
 License: Free to use with limitations. Please see LICENCE.txt in source file or http://www.serviio.org/licence
@@ -21,10 +21,10 @@ Summary: **serviio_app_name** - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
-Requires: serviio >= 1.5
-Requires: serviio-WebUI >= 1.6.3
+Requires: serviio >= 1.6
 Requires: webconfig-php-mbstring >= 5.3.3
 Requires: app-base-core >= 1:1.2.6
+Obsoletes: serviio-WebUI
 
 %description core
 **serviio_app_description**
@@ -39,7 +39,6 @@ This package provides the core API and libraries.
 mkdir -p -m 755 %{buildroot}/usr/clearos/apps/serviio
 cp -r * %{buildroot}/usr/clearos/apps/serviio/
 
-install -D -m 0644 packaging/Serviio.conf %{buildroot}/usr/clearos/sandbox/etc/httpd/conf.d/Serviio.conf
 install -D -m 0644 packaging/serviio.php %{buildroot}/var/clearos/base/daemon/serviio.php
 
 %post
@@ -82,5 +81,4 @@ exit 0
 /usr/clearos/apps/serviio/deploy
 /usr/clearos/apps/serviio/language
 /usr/clearos/apps/serviio/libraries
-%config(noreplace) /usr/clearos/sandbox/etc/httpd/conf.d/Serviio.conf
 /var/clearos/base/daemon/serviio.php

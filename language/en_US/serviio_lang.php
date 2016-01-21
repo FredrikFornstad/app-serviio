@@ -8,10 +8,16 @@ $lang['serviio_password_updated'] = 'Password updated succesfully.';
 $lang['serviio_password_invalid'] = 'Password is invalid.';
 $lang['serviio_password_mismatch'] = 'Password and verify do not match.';
 $lang['serviio_lang_please_set_a_password'] = 'Please set a password.';
-$lang['serviio_management_tool'] = 'Serviio Management Tool';
-$lang['serviio_management_tool_help'] = 'Follow the link to access the Serviio management tool. PLEASE NOTE: Allow serveral minutes for Serviio to build its database first time it is started before trying to access the web interface. If you see a warning text in red that version v is found it usually means that the Serviio Deamon has not finished its start up process: Then wait a couple of minutes and reload your browser. Tip: Use the flexshare storage as your media folders. Please set the password for the Serviio administrator (username serviio) using the form below.';
-$lang['serviio_go_to_management_tool'] = 'Go To Serviio Management Tool';
-$lang['serviio_management_tool_not_accessible'] = 'The Serviio Management Tool is not available when the service is not running';
+$lang['serviio_management_tool'] = 'Serviio Management Console';
+$lang['serviio_management_tool_help'] = 'Follow the link to access the native Serviio management console. <br>
+1. Tip: use Flexshare-folders for your media. Be sure to enable 3rd party read access in the flexshare settings for each folder. After that, from Serviio Management Console, you find the folders at /var/flexshare/shares/ . <br>
+2. If you have problems with Serviio, you can examine the log file in the ClearOS Log Viewer tool (Found under "Reports"). <br>
+3. Any optional Serviio plugins (.groovy) should be put in /usr/share/serviio/plugins directory. <br>
+4. By default any user/device on your LAN can access Serviio Management Console and change any setting. Additional work is required if you want to limit access. WAN access is blocked by default. <br>
+- The Serviio Management Console and the /REST API uses port 23423. <br>
+- The Mediabrowser (paid version of Serviio only) uses port 23424 for media streaming.';
+$lang['serviio_go_to_management_tool'] = 'Go To Serviio Management Console';
+$lang['serviio_management_tool_not_accessible'] = 'The Serviio Management Console is not available when the service is not running';
 $lang['serviio_set_password'] = 'Set Password';
 
 

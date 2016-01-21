@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'serviio';
-$app['version'] = '1.5';
+$app['version'] = '1.6';
 $app['release'] = '1';
 $app['vendor'] = 'Petr Nejedly';
 $app['packager'] = 'Fredrik Fornstad';
@@ -34,24 +34,20 @@ $app['controllers']['serviio']['title'] = lang('serviio_app_name');
 
 
 $app['core_requires'] = array(
-    'serviio >= 1.5',
-    'serviio-WebUI >= 1.6.3',
+    'serviio >= 1.6',
     'webconfig-php-mbstring >= 5.3.3',
     'app-base-core >= 1:1.2.6'
 );
 
+$app['core_obsoletes'] = array(
+    'serviio-WebUI'
+);
+
 $app['core_file_manifest'] = array(
     'serviio.php' => array('target' => '/var/clearos/base/daemon/serviio.php'),
-    'Serviio.conf' => array(
-        'target' => '/usr/clearos/sandbox/etc/httpd/conf.d/Serviio.conf',
-        'mode' => '0644',
-        'config' => TRUE,
-        'config_params' => 'noreplace',
-    ),
 );
 
 $app['delete_dependency'] = array(
     'app-serviio-core',
-    'serviio-WebUI',
     'serviio'
 );

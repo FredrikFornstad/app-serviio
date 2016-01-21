@@ -12,7 +12,6 @@ fi
 # Patch ownership for webconfig access
 #-------------------------------
 /bin/chown -R serviio.webconfig /usr/share/serviio*
-/bin/chmod u+s /usr/share/serviio-WebUI/*.php
 /bin/chown webconfig /etc/serviio/webconfig.users
 
 
