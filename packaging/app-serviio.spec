@@ -1,9 +1,9 @@
 
 Name: app-serviio
 Epoch: 1
-Version: 1.6
+Version: 1.6.1
 Release: 1%{dist}
-Summary: **serviio_app_name**
+Summary: Serviio Media Server
 License: Free to use with limitations. Please see LICENCE.txt in source file or http://www.serviio.org/licence
 Group: ClearOS/Apps
 Packager: Fredrik Fornstad
@@ -14,20 +14,20 @@ Requires: %{name}-core = 1:%{version}-%{release}
 Requires: app-base
 
 %description
-**serviio_app_description**
+Serviio Media Server - Serviio is a free media server. It allows you to stream your media files (music, video or images) to renderer devices (e.g. a TV set, Bluray player, games console or mobile phone) on your connected home network. There is also a paid for Pro edition which further enhances the possibilities of sharing content in your connected household. Serviio works with many devices from your connected home (TV, Playstation 3, XBox 360, smart phones, tablets, etc.). It supports profiles for particular devices so that it can be tuned to maximise the device potential and/or minimize lack of media format playback support (via transcoding). Serviio is using the DLNA protocol to stream content to the renderering devices.
 
 %package core
-Summary: **serviio_app_name** - Core
+Summary: Serviio Media Server - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
-Requires: serviio >= 1.6
+Requires: serviio >= 1.6.1
 Requires: webconfig-php-mbstring >= 5.3.3
 Requires: app-base-core >= 1:1.2.6
 Obsoletes: serviio-WebUI
 
 %description core
-**serviio_app_description**
+Serviio Media Server - Serviio is a free media server. It allows you to stream your media files (music, video or images) to renderer devices (e.g. a TV set, Bluray player, games console or mobile phone) on your connected home network. There is also a paid for Pro edition which further enhances the possibilities of sharing content in your connected household. Serviio works with many devices from your connected home (TV, Playstation 3, XBox 360, smart phones, tablets, etc.). It supports profiles for particular devices so that it can be tuned to maximise the device potential and/or minimize lack of media format playback support (via transcoding). Serviio is using the DLNA protocol to stream content to the renderering devices.
 
 This package provides the core API and libraries.
 

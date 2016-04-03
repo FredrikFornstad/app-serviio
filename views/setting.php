@@ -57,7 +57,7 @@ echo infobox_highlight(
     lang('serviio_management_tool'),
     lang('serviio_management_tool_help') . '<br><br>' .
     "<p align='center'>" .  
-    anchor_custom('http://'.$serveraddr.':23423/console', lang('serviio_go_to_management_tool'), 'high', array('target' => '_blank')) . 
+    anchor_custom('https://'.$serveraddr.':23523/console', lang('serviio_go_to_management_tool'), 'high', array('target' => '_blank')) . 
     "</p>"
 );
 

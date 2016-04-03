@@ -14,8 +14,9 @@ $lang['serviio_management_tool_help'] = 'Follow the link to access the native Se
 2. If you have problems with Serviio, you can examine the log file in the ClearOS Log Viewer tool (Found under "Reports"). <br>
 3. Any optional Serviio plugins (.groovy) should be put in /usr/share/serviio/plugins directory. <br>
 4. By default any user/device on your LAN can access Serviio Management Console and change any setting. Additional work is required if you want to limit access. WAN access is blocked by default. <br>
-- The Serviio Management Console and the /REST API uses port 23423. <br>
-- The Mediabrowser (paid version of Serviio only) uses port 23424 for media streaming.';
+- The Serviio Management Console and the /REST API uses port 23423 (http/non-SSL) or port 23523 (https/SSL). <br>
+- The Mediabrowser (paid version of Serviio only) uses port 23424 (http) or port 23524 (https) for media streaming. <br>
+  Please note that viewing video over https in MediaBrowser is very CPU intensive and you might experience stuttering.';
 $lang['serviio_go_to_management_tool'] = 'Go To Serviio Management Console';
 $lang['serviio_management_tool_not_accessible'] = 'The Serviio Management Console is not available when the service is not running';
 $lang['serviio_set_password'] = 'Set Password';

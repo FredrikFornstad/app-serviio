@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'serviio';
-$app['version'] = '1.6';
+$app['version'] = '1.6.1';
 $app['release'] = '1';
 $app['vendor'] = 'Petr Nejedly';
 $app['packager'] = 'Fredrik Fornstad';
@@ -34,7 +34,7 @@ $app['controllers']['serviio']['title'] = lang('serviio_app_name');
 
 
 $app['core_requires'] = array(
-    'serviio >= 1.6',
+    'serviio >= 1.6.1',
     'webconfig-php-mbstring >= 5.3.3',
     'app-base-core >= 1:1.2.6'
 );
