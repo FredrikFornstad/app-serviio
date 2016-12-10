@@ -1,0 +1,11 @@
+/var/log/serviio.log
+{
+rotate 6
+monthly
+maxsize 1M
+missingok
+notifempty
+dateext
+copytruncate
+}
+
